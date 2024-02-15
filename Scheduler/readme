@@ -1,0 +1,63 @@
+Group No-14
+Group Members
+	Harshit Gupta-2022209
+	Abhay Kohli-2022015
+
+
+Assignment 3-> Creating Simple_scheduler from scratch
+
+To execute the code run 
+	-> " gcc simple_scheduler.c -o sched "        
+	-> ./sched <NCPU> <TSLICE(in milliseconds)>
+	-> Now you can run command submit "submit <fileName> <priority>"
+
+How we implemented:
+	1. We first allocate shared memory for readyqueue(4 queues for  	
+	priority), Processes and Nodes(for queue)
+	
+	2.Initiated semaphore for adding and getting process from readyqueue
+	
+	3.Then we implemented shell and also called a fork to create a 
+	deamon process for scheduler . 
+	
+	4.When the user enters a command to execute a executable file, a process 
+	is created by fork and it is immediatly stopped by the parrent from 
+	executing and the process is added to readyqueue based on priority.
+	
+	5.Now comes thr role of scheduler which fetch a process from a ready queue 
+	and sends to the running state for TSLICE microseconds.
+	
+	6.It again stops the running process after tslice and push to the back of 
+	the queue based on priority. 
+	
+	7.Now to minimize starvation of a low priority proces=> the process is sent
+	to higher level priority Queue if the waiting time of the process at a position 
+	is greater than a factor
+	
+How the readyQueue works:
+	1.Adding of A process: A process is added to the back of the queue to the respective
+	queue level based on priority.(By default priority of a process is set to 1)
+	
+	2.Getting the process from ready Queue:It start for availability of a process from a higher 
+	priority level .If it founds any process in the whole queue it immediately returns and remove 
+	the process from ready queue. 	
+
+Scheduling Algorithm(For Priorities):
+ 	->It is based on round robin with multi level queue
+ 	->It first try to execute the process of higher level in Round robin fashion.
+ 	->To minimize starvation: If a low priority level process waits for a time greater than a factor,it is 
+ 	shifteed to a level higher.
+	->the factor after which a process is shifted to higher level is calculated by 
+	factor=(average no of processes in ready queue)*(TSLICE/1000)/(no of CPU's)
+	Now this factor vary across different priority level i.e. (fector*(3-i))
+	for priority =1 => factor*3
+	    priority =2 => factor*2
+	    priority =3 => factor*1
+	    Priority =4 => Not needed as higher level process will always executed due to round robin fashion 
+	  
+
+Contribution:
+	Harshit Gupta: Implemented  scheduler
+	Abhay Kohli:Statistics and testing	
+	
+	
