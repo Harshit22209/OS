@@ -1,11 +1,4 @@
-Group No: 14
 
-Members:
-	Harshit Gupta 2022209
-	Abhay Kohli   2022015
-
-
-**We have done this assignment with bonus(i.e page-by-page allocation of segment is done)**
 How to run the programme:
 
 Step 1:run " export LD_LIBRARY_PATH=<dir to bin>:$LD_LIBRARY_PATH "
@@ -36,8 +29,5 @@ How code works:
 
 10. After the program execution, statistics are printed to the terminal. This includes information about the number of page faults, page allocations, and internal fragmentation.
 
-Contributions-
 
-	Harshit Gupta-Implemented Smart loader
-	Abhay Kohli-Create readme file,helped in getting resources for assignment
 
