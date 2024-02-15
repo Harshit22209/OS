@@ -1,10 +1,3 @@
-Group No-14
-Group Members
-	Harshit Gupta-2022209
-	Abhay Kohli-2022015
-
-
-Assignment 3-> Creating Simple_scheduler from scratch
 
 To execute the code run 
 	-> " gcc simple_scheduler.c -o sched "        
