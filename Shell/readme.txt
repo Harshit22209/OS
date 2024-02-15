@@ -1,11 +1,4 @@
-Group No-14
-Group Members
-	Harshit Gupta-2022209
-	Abhay Kohli-2022015
-GitHUB link:- https://github.com/Harshit22209/ASSIGNMENT_2
 
-Assignment 2-> Creating SimpleShell from scratch
-        ** Both the bonus are also include **
 
 To Execute the code run the command " make compile " on terminal.
 	- It will first compile the simpleShell.c. 
@@ -74,18 +67,4 @@ How it is implemented:
 	->as you change your directory the same will be reflect in the command prompt like we see in the terminal.
 	  It will be relative to the userRoot.
 
-Contribution-
-	Harshit Gupta:-    
-			  -> Handling errors
-			  -> Entire simpleShell.c file
-			  -> Managing pipe
-			  -> Commands Implemented
-				-> mkdir, rmdir, ch, ls, grep, cat, echo, sort ,executing c and sh ,history
-			  -> Creating all the helper function
-	Abhay Kohli:-	
-			  ->Commands implemented-
-				-wc -c,-wc -l,-uniq,-grep logic,-cat
-			  ->Testing
-			  ->Helped in creating readme File
-				
 				
