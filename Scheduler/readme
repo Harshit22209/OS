@@ -49,8 +49,6 @@ Scheduling Algorithm(For Priorities):
 	    Priority =4 => Not needed as higher level process will always executed due to round robin fashion 
 	  
 
-Contribution:
-	Harshit Gupta: Implemented  scheduler
-	Abhay Kohli:Statistics and testing	
+
 	
 	
