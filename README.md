@@ -1,7 +1,7 @@
 # OS Project: Shell, Smart Loader, and Simple Scheduler
 
 ## Overview
-This project consists of three main components: a Unix shell, a smart loader, and a simple scheduler. Each component is implemented in C and operates on a Linux system. The source code is available on [GitHub](your-github-link).
+This project consists of three main components: a Unix shell, a smart loader, and a simple scheduler. Each component is implemented in C and operates on a Linux system. 
 
 ## Components
 
